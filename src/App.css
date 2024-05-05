@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header styles */
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header h2 {
+  margin: 0;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: -83%;
+}
+
+.profile-photo, .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo img, .profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.active-indicator {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #0FFF50;
+  border-radius: 50%;
+  right: 0;
+  bottom: 10px;
+  margin-right: 17px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 80px; /* Adjusted padding to accommodate profile photo */
+  overflow-y: auto;
+  z-index: 1;
+  font-family: 'Arial', sans-serif; /* New font for the sidebar */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px; /* Increased padding */
+  margin-top: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+.sidebar ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar ul li:hover .bi {
+  color: #fff;
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+  margin-left: 250px; /* Adjusted margin */
+  overflow-y: auto; /* Allow content to be scrolled */
+  min-height: calc(100vh - 60px); /* Full height minus header height */
+  scrollbar-width: thin; /* Custom scrollbar width for Firefox */
+}
+
+.content::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.content::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #bbb; /* Thumb color */
+  border-radius: 10px; /* Thumb border radius */
+}
+
+.card {
+background-color: #fff;
+padding: 50px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+transition: transform 0.3s, box-shadow 0.3s;
+background-color: #c8bfcf;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.card-link {
+  display: inline-block;
   color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.card-link:hover {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-link-icon {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc; /* Adding a border for better visibility */
+  border-radius: 20px; /* Making it slightly rounded */
+  padding: 10px 20px; /* Adding padding for better appearance */
+  font-size: 16px;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .sidebar {
+      width: 200px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header h2 {
+      margin-left: -6rem;
+  }
+
+  .content {
+      margin-left: 200px;
   }
 }

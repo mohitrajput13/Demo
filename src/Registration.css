@@ -1,0 +1,163 @@
+
+.container1 {
+    max-width: 90%;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    unicode-bidi: isolate;
+}
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .left-section, .right-section {
+      flex: 1;
+      padding: 40px 60px;
+  }
+  
+  .left-section {
+      background: #fff;
+      border-radius: 20px 0px 0px 20px;
+      color: #333;
+  }
+  
+  .right-section {
+      background-color: plum;
+      border-radius: 0px 20px 20px 0px;
+  }
+  
+  .title {
+      font-weight: 500;
+      font-size: 25px;
+      margin-bottom: 34px;
+  }
+  
+  .input-div {
+      margin-bottom: 20px;
+  }
+  
+  .input-div label {
+      font-size: 16px;
+      margin-bottom: 5px;
+  }
+  
+  .input-div input[type="text"],
+  .input-div input[type="email"],
+  .input-div input[type="tel"],
+  .input-div input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      background-color: transparent;
+      color: #fff;
+  }
+  
+  .input-div input[type="text"]::placeholder,
+  .input-div input[type="tel"]::placeholder,
+  .input-div input[type="file"]::placeholder {
+      color: #fff;
+  }
+  
+  .left-section .input-div input[type="text"],
+  .left-section .input-div input[type="file"] {
+      border-color: purple;
+  }
+  
+  .file-input-container1 {
+      position: relative;
+      border: 1px solid purple;
+      width: 50%;
+      border-radius: 5px;
+      padding: 10px;
+  }
+  
+  .file-input-container1 input[type=file] {
+      display: none;
+  }
+  
+  .file-input-container1 .file-selector {
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #fff;
+  }
+  
+  .file-input-container1 label {
+      cursor: pointer;
+  }
+  
+  button {
+      background-color: #fff;
+      border-radius: 20px;
+      height: 40px;
+      -webkit-box-shadow: 0 6px 17px 0 rgba(0, 0, 0, .15);
+      width: 180px;
+      border: none;
+      cursor: pointer;
+      color: #333;
+      font-weight: 700;
+      font-size: 15px;
+  }
+  
+  button:hover {
+      background: gray;
+  }
+  
+  .left-section .input-div input[type="text"],
+  .left-section .input-div input[type="file"] {
+      color: white;
+  }
+  
+  .left-section .input-div input[type="text"]::placeholder,
+  .left-section .input-div input[type="file"]::placeholder {
+      color: black;
+  }
+  
+  .right-section .input-div input[type="text"],
+  .right-section .input-div input[type="file"] {
+      color: white;
+  }
+  
+  .right-section .input-div input[type="text"]::placeholder,
+  .right-section .input-div input[type="email"]::placeholder,
+  .right-section .input-div input[type="file"]::placeholder {
+      color: white;
+  }
+  
+  @media (max-width: 1000px) {
+    .container1 {
+      flex-direction: column;
+      max-width: 90%;
+    }
+    .left-section, .right-section {
+      padding: 30px;
+    }
+    .left-section {
+      border-radius: 20px 20px 0px 0px;
+      color: #333;
+    }
+    .right-section {
+      border-radius: 0px 0px 20px 20px;
+      color: #fff;
+    }
+    .right-section .input-div input[type="text"],
+    .right-section .input-div input[type="file"] {
+        border-color: #fff;
+    }
+    .right-section .input-div input[type="text"],
+    .right-section .input-div input[type="file"],
+    .right-section .input-div input[type="text"]::placeholder,
+    .right-section .input-div input[type="file"]::placeholder {
+        color: #000;
+    }
+    .right-section .input-div input[type="text"]::placeholder,
+      .right-section .input-div input[type="file"]::placeholder {
+          color: white;
+      }
+  }

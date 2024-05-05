@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Home-First {
+    position: relative;
+    color: white;
+    background: rgb(97, 92, 212);
+    background: linear-gradient(90deg, rgba(97, 92, 212, 1) 29%, rgba(177, 91, 219, 0.9836309523809523) 58%);
+    padding: 20px;
+    height: 97vh;
+    width:100%;
+}
+#Login-btn{
+    height:3rem;
+    width :5rem;
+    margin-left :5rem;
+}
+img.float-end {
+    max-width: 100%; /* Image ka maximum width container ke width ke barabar hoga */
+    height:70vh; /* Image ka aspect ratio maintain rahega */
+    display: block; /* Image ko block level element bana dega */
+    position: absolute; /* Image ko position karne ke liye */
+    bottom: 0; /* Image ko container ke bottom par position dena */
+    right: 0; /* Image ko container ke right par position dena */
+    margin-top: 20px; /* Add margin-top for mobile view */
+    max-width: 60%;
+    animation: floatAnimation 5s ease-in-out infinite;
+}
+/* #Loginbtn{
+    margin-left: 6vw;
+} */
+/* #Loginbtn:hover {
+ 
+   color:blueviolet;
+   font-size: large;
+} */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.responsive-text p {
+    font-size: 4vw;
+    color: white;
+    padding-top: 10rem;
+    margin-left: -7rem;
+    /* padding-left:-22rem; */
+    /* padding-left: 6vw; */
+    margin-bottom: 10px; /* Add some space below the text */
+    max-width: 70%; /* Text ka maximum width container ke width ke barabar hoga */
+}
+#Login-btn{
+   
+    margin-left :7rem;
+    padding-top : -2rem;
+}
+.responsive-text2 p{
+    color: white;
+    font-size: 2vw;
+    padding-left: 6vw;
+    margin-left: -10rem;
+    padding-top: 1vw;
+    margin-bottom: 10px; /* Add some space below the text */
+    max-width: 70%;
+}
+@media screen and (max-width: 360px) {
+    .Home-First {
+        /* padding-bottom: 100px;  */
+        /* position: relative; */
+        width: 100%;
+        height: 50vh;
+    
+    }
+    #Login-btn{
+        height:2rem;
+        width :25vw;
+        margin-left :2rem;
+        padding-top : -2rem;
+    }
+
+    .responsive-text p {
+        font-size: 20px;
+        padding-top: 40px; /* Mobile view ke liye fixed padding top */
+        margin-top: 20vh; 
+      
+    }
+    .responsive-text2 p{
+        font-size: 2vw;
+        padding-left: 6vw;
+        padding-top: 1vw;
+        margin-bottom: 10px; /* Add some space below the text */
+        max-width: 70%;
+    }
+
+    img.float-end {
+        position: static; /* Remove absolute positioning for mobile view */
+        max-width: 100%; /* Set maximum width equal to container width */
+        height: auto; /* Allow image height to adjust based on width */
+        margin-top: -20px; /* Add negative margin-top for spacing */
+        margin-bottom: 20px; /* Add margin-bottom for spacing */
+        max-height: 35vh; /* Limit maximum height to 50% of viewport height */
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .Home-First {
+        padding-bottom: 100px; /* Add padding-bottom to create space for the image */
+        position: relative;
+    }
+    #Login-btn{
+        height:2rem;
+        width :20vw;
+        margin-left :2rem;
+        padding-top : -2rem;
+    }
+
+
+    .responsive-text p {
+        font-size: 20px;
+        padding-top: 20px; /* Mobile view ke liye fixed padding top */
+        /* margin-top: 13vh;  */
+        padding-top: 10vh;
+        /* padding-left: 5rem; */
+        margin-left:12rem;
+      
+    }
+    .responsive-text2 p{
+        font-size: 2vw;
+        padding-left: 6vw;
+        /* padding-top: 1vw; */
+        margin-bottom: 10px; /* Add some space below the text */
+        max-width: 70%;
+        margin-left:4rem;
+    }
+
+    img.float-end {
+        position: static; /* Remove absolute positioning for mobile view */
+        max-width: 100%; /* Image ka maximum width container ke width ke barabar hoga */
+        height: auto; /* Image ka aspect ratio maintain rahega */
+        margin-top: 0px; /* Add margin-top for mobile view */
+    }
+}
+
+    @media screen and (max-width: 480px) {
+        .Home-First {
+            padding-bottom: 100px; /* Add padding-bottom to create space for the image */
+            padding-top: 7vh;
+            font-size: 4vw;
+            height :90vh;
+           /* position: relative; */
+            /* position: relative; */
+        }
+        .responsive-text p {
+            font-size: 0px; /* Small font size for smaller screens */
+            padding-top:12vh ; /* Mobile view ke liye fixed padding top */
+
+
+        }
+        img.float-end {
+            position: static; /* Remove absolute positioning for mobile view */
+            max-width: 100%; /* Set maximum width equal to container width */
+            height: auto; /* Allow image height to adjust based on width */
+            margin-top: -20px; /* Add negative margin-top for spacing */
+            margin-bottom: 20px; /* Add margin-bottom for spacing */
+            max-height: 35vh; /* Limit maximum height to 50% of viewport height */
+        }
+        
+        .First{
+            height : auto;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        img.float-end {
+            position: static; /* Remove absolute positioning for mobile view */
+            max-width: 100%; /* Set maximum width equal to container width */
+            height: auto; /* Allow image height to adjust based on width */
+            margin-top: -20px; /* Add negative margin-top for spacing */
+            margin-bottom: 20px; /* Add margin-bottom for spacing */
+            max-height: 35vh; /* Limit maximum height to 50% of viewport height */
+        }
+        .Home-First {
+            /* padding-bottom: 100px; Add padding-bottom to create space for the image */
+            position: relative;
+
+        }
+      
+    
+        .responsive-text p {
+            font-size: 20px;
+            padding-top: 20px; /* Mobile view ke liye fixed padding top */
+            margin-top: 5vh; /* Remove margin top for mobile view */
+            margin-left:3rem;
+        }
+        
+    }
+    @media screen and (max-width: 768px) {
+        img.float-end {
+            position: static; /* Remove absolute positioning for mobile view */
+            max-width: 100%; /* Set maximum width equal to container width */
+            height: auto; /* Allow image height to adjust based on width */
+            margin-top: -20px; /* Add negative margin-top for spacing */
+            margin-bottom: 20px; /* Add margin-bottom for spacing */
+            max-height: 35vh; /* Limit maximum height to 50% of viewport height */
+        }
+        .Home-First {
+            /* padding-bottom: 100px; Add padding-bottom to create space for the image */
+            position: relative;
+
+        }
+      
+    
+        .responsive-text p {
+            font-size: 20px;
+            padding-top: 20px; /* Mobile view ke liye fixed padding top */
+            margin-top: 10vh; /* Remove margin top for mobile view */
+           
+        }
+    }
+    
+    @media screen and (max-width: 960px) {
+        .responsive-text p {
+            font-size: 3vw; /* Responsive font size */
+            padding-top: 7vh; /* Responsive padding top */
+        }
+        .Home-First {
+            padding-bottom: 80px; /* Add padding-bottom to create space for the image */
+            padding-top: 7vh;
+            height: 30rem;
+        }
+        img.float-end {
+            position: static; /* Remove absolute positioning for mobile view */
+            max-width: 100%; /* Set maximum width equal to container width */
+            height: auto; /* Allow image height to adjust based on width */
+            /* margin-top: -20px; */
+            margin-bottom: 20px; /* Add margin-bottom for spacing */
+            max-height: 40vh; /* Limit maximum height to 50% of viewport height */
+        }
+    }
+    @media screen and (max-width: 1120px) {
+        .responsive-text p {
+            font-size: 3vw; /* Responsive font size */
+            padding-top: 7vh; /* Responsive padding top */
+        }
+        .Home-First {
+            padding-bottom: 80px; /* Add padding-bottom to create space for the image */
+            padding-top: 7vh;
+            height: 30rem;
+        }
+        img.float-end {
+            position: static; /* Remove absolute positioning for mobile view */
+            max-width: 100%; /* Set maximum width equal to container width */
+            height: auto; /* Allow image height to adjust based on width */
+            /* margin-top: -20px; */
+            margin-bottom: 20px; /* Add margin-bottom for spacing */
+            max-height: 40vh; /* Limit maximum height to 50% of viewport height */
+        }
+    }
+    @media screen and (max-width: 1220px) {
+        .responsive-text p {
+            font-size: 3vw; /* Responsive font size */
+            padding-top: 7vh; /* Responsive padding top */
+        }
+        .Home-First {
+            padding-bottom: 80px; /* Add padding-bottom to create space for the image */
+            padding-top: 7vh;
+            height: 30rem;
+        }
+        img.float-end {
+            position: static; /* Remove absolute positioning for mobile view */
+            max-width: 100%; /* Set maximum width equal to container width */
+            height: auto; /* Allow image height to adjust based on width */
+            /* margin-top: -20px; */
+            margin-bottom: 20px; /* Add margin-bottom for spacing */
+            max-height: 40vh; /* Limit maximum height to 50% of viewport height */
+        }
+    }
+    @media screen and (max-width: 13px) {
+        .responsive-text p {
+            font-size: 3vw; /* Responsive font size */
+            padding-top: 7vh; /* Responsive padding top */
+        }
+        .Home-First {
+            padding-bottom: 80px; /* Add padding-bottom to create space for the image */
+            padding-top: 7vh;
+            height: 30rem;
+        }
+        img.float-end {
+            position: static; /* Remove absolute positioning for mobile view */
+            max-width: 100%; /* Set maximum width equal to container width */
+            height: auto; /* Allow image height to adjust based on width */
+            /* margin-top: -20px; */
+            margin-bottom: 20px; /* Add margin-bottom for spacing */
+            max-height: 40vh; /* Limit maximum height to 50% of viewport height */
+        }
+    }
+

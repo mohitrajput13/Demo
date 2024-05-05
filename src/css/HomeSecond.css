@@ -1,0 +1,56 @@
+/* HomeSecond.css */
+
+/* Adjust image size for responsiveness */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust card width for responsiveness */
+.card {
+  width: 100%;
+}
+
+/* Additional styles */
+#heading {
+  padding-top: 2rem;
+  padding-left:8rem;
+  font-family: sans-serif;
+}
+#TextAnnimation {
+  position: relative;
+}
+#TextSideImage{
+  margin-top:8rem;
+}
+
+#TextAnnimation:hover #heading,
+#TextAnnimation:hover #textArea {
+  transition: 0.3s ease;
+  transform: translateX(-20px); /* Adjust the value to your preference */
+}
+/* #bgDecorate :hover{
+  color:blueviolet
+} */
+
+#textArea {
+  width: 70%; /* Adjusted for smaller screens */
+  margin: 0 auto; /* Centering the text area */
+  word-spacing: 0.5rem;
+  font-family: sans-serif;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  #textArea {
+    width: 80%; /* Adjusted for screens smaller than 767px */
+  }
+}
+
+/* Media query for even smaller screens, like 360px */
+@media (max-width: 360px) {
+  #textArea {
+    width: 95%; /* Adjusted for screens smaller than 360px */
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+}

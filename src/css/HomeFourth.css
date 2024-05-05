@@ -1,0 +1,103 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:white;
+    justify-content: space-between;
+    margin: -15px; /* Negative margin to offset the padding */
+}
+  
+.card {
+    flex: 1 0 calc(25% - 30px); /* Adjusted for margin */
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top:20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+  
+.card-content {
+    padding: 10px;
+    /* padding-left: 4rem; */
+}
+#TextArea{
+    margin-left: 3rem;
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+#heading {
+    padding-top: 5rem;
+
+  }
+ 
+  #card {
+    transition: background-color 0.3s, color 0.3s; 
+    font-family: sans-serif;
+  }
+  
+  #card:hover {
+    /* background-color: rgb(202, 140, 202);  */
+    background-color: #A78CDC;
+    color: white; 
+  }
+
+ 
+  #textArea {
+    width: 50%; /* Adjusted for smaller screens */
+    margin: 0 auto; /* Centering the text area */
+    word-spacing: 0.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+@media screen and (max-width: 1200px) {
+    .card {
+        flex: 1 0 calc(33.33% - 30px);
+    }
+}
+@media screen and (max-width: 360px) {
+    .card {
+        flex: 1 0 calc(33.33% - 30px);
+        min-width: 20rem;
+    }
+    #heading{
+        /* padding-top: 5rem;
+        /* padding-left: -2rem; */
+    margin-left: -8rem;
+
+    }
+}
+@media screen and (max-width: 480px) {
+    .card {
+        flex: 1 0 calc(50% - 30px);
+        min-width: 20rem;
+    }
+    #heading {
+        margin-left: -4rem;
+    }
+    #textArea {
+        width: 90rem;
+        padding-left: 1.5rem;
+        min-width: 20rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        flex: 1 0 calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex: 1 0 calc(100% - 30px);
+    }
+    #textArea {
+        width: 80%; /* Adjusted for screens smaller than 767px */
+      }
+}
